@@ -64,6 +64,96 @@ figcaption
 .bg-color
   &-1
     background-color: $color-primario
+  &-2
+    background-color: #BBDFEE 
+  &-3
+    background-color: #FFE7C1 
+  &-4
+    background-color: #FBE8D7 
+  &-5
+    background-color: #513013 
+  &-6 
+    background-color: #D0D7DC 
+  &-7 
+    background-color: #EDF7FB !important
+
+
+.w-80x
+  width: 80px
+.br-tr
+  border-top-right-radius: 60px
+.br-tl
+  border-top-left-radius: 60px
+
+.subt
+  display: flex
+  align-items: center
+  position: relative  
+  width: fit-content  
+  img
+    width: 40px
+    z-index: 1
+  h3 
+    z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    background-color: #55AFD4  
+    border-radius: 100px
+    width: 100%
+    height: 4px
+    z-index: 0
+    bottom: -7px
+  &::after
+    content: ''
+    position: absolute
+    border-bottom: 1px dashed #A1B0B9
+    width: 100%
+    height: 4px
+    z-index: 0
+    bottom: 0px
+.subt-2
+  display: flex
+  align-items: center
+  position: relative  
+  width: fit-content  
+  img
+    width: 15px
+    z-index: 1
+  .text
+    h4 
+      z-index: 1
+      position: relative 
+    &::before
+      content: ''
+      position: absolute
+      background-color: #FBE8D7 
+      width: 100%
+      height: 100%
+      top: 0
+      z-index: 0
+.acordion
+  &__accion__btn--b, &__accion__btn--a
+    border-color: $color-acento-botones
+    background-color: $color-acento-botones
+  &__titulo h3
+    color: $white
+  &__activo
+    background-color: #55AFD4 
+    .acordion__titulo h3
+      color: $color-sistema-texto
+.fa-lista
+  li
+    display: flex !important
+    align-items: flex-start
+  li:before
+    position: relative
+    margin-right: 7px
+    font-size: 1.4rem 
+.tabla-a.color-primario
+  thead th
+    background-color: #A1B0B9
+    text-align: left
 
 
 
