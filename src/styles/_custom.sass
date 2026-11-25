@@ -120,21 +120,29 @@ figcaption
 .bg-fondo
   &-1
     //background-image: url(../assets/curso/bg/3.svg)
+  &-2
+    background-image: url(../assets/curso/temas/t4/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
 .bg-color
   &-1
     background-color: $color-primario
   &-2
-    background-color: #BBDFEE 
+    background-color: #BBDFEE
   &-3
-    background-color: #FFE7C1 
+    background-color: #FFE7C1  
   &-4
-    background-color: #FBE8D7 
+    background-color: #FBE8D7
   &-5
     background-color: #513013 
   &-6 
     background-color: #D0D7DC 
   &-7 
     background-color: #EDF7FB !important
+  &-8
+    background-color: #E6C09F 
+  &-9
+    background-color: #FCF1C7
 
 
 .w-80x
@@ -243,6 +251,42 @@ figcaption
   &__item .text-end
     h3, p
       text-align: left
+.avatar
+  position: absolute
+  bottom: 0
+  right: -4rem
+  z-index: 1
+  @media (max-width: 1000px)
+    display: none
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 12rem
+  & > *
+    position: relative
+  h5
+    color: #000000 
+  p
+    margin-bottom: 0
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    right: 0
+    width: calc( 100% - 60px)
+    height: 100%
+    background-color: #FBE8D7
+  @media (max-width: 1000px)
+    padding-right: 2rem
+
+.crd--first, .crd--last
+  &::before
+    background-color: #BBDFEE!important
+.crd--first
+  &::before
+    border-top-left-radius: 30px
+.crd--last
+  &::before
+    border-bottom-left-radius: 30px
 
 
 
