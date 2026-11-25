@@ -2,57 +2,116 @@
 .banner-principal-decorativo
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
-    position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
+    top: 13%
+    left: -17%
+    width: 23%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
-    position: absolute
-    top: 30%
-    right: 10%
-    width: 20%
-
-
+    top: 59%
+    left: -31%
+    width: 24%
 @keyframes float1
   0%
     transform: translateY(20px)
-
   100%
     transform: translateY(0px)
 
+
 .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
   flex: 0 0 auto !important
-  width: 58.33333333% !important
+  width: 45% !important
 .banner-principal__img 
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 .banner-principal__row .banner-principal__img 
-    width: 33%;
-    
-.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $color-sistema-texto !important  
+    width: 37%
 
-.boton *, .boton--sm *,
-.barra-avance__boton--regresar span
-  color: $white !important
 .banner-interno__titulo h1, .banner-interno__titulo h2, 
 .banner-interno__titulo h3, .banner-interno__titulo h4, 
 .banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $color-sistema-texto !important  
+  color: $white !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: $white !important
 figcaption 
-    font-weight: normal !important
+  font-weight: normal !important
 
-.banner-interno__titulo__icono i
-    color: $color-acento-botones !important;
+
+.banner-interno__titulo__icono 
+  background-color: #FFE7C1
+  i
+    color: $color-sistema-texto !important
+.banner-interno__fondo
+  background-image: url(../assets/curso/temas/bg/miniportada.png) !important
+  background-size: cover
 
 
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
+.fa-lista
+  li
+    display: flex !important
+    align-items: flex-start
+  li:before
+    position: relative
+    margin-right: 7px
+    font-size: 1.4rem 
+.lista-ul--color.color-primario li > i:first-of-type  
+  color: $color-primario
+.lista-ul--color.color-secundario li > i:first-of-type  
+  color: $color-secundario     
+.lista-ul--color.color-adicional-1 li > i:first-of-type  
+  color: $color-adicional-1  
+.lista-ul--color.color-adicional-2 li > i:first-of-type  
+  color: $color-adicional-2  
+.lista-ol--cuadro.color-primario .lista-ol--cuadro__vineta
+  background-color: $color-primario
+.bg-color-acento-botones
+  background-color: $color-acento-botones
+.bg-color-acento-contenido
+  background-color: $color-acento-contenido
+.bg-color-primario
+  background-color: $color-primario
+.bg-color-secundario
+  background-color: $color-secundario
+.bg-color-sistema-texto
+  background-color: $color-sistema-texto
+.text-color-sistema
+  color: $color-sistema-texto !important
+.bg-color-adicional-1
+  background-color: $color-adicional-1
+.ct-color-primario
+  color: $color-primario
+.ct-color-acento-botones
+  color: $color-acento-botones
+.ct-secundario 
+  color: $color-secundario !important
+.ct-acento-contenido 
+  color: $color-acento-contenido !important
+.w-fit
+  width: fit-content
+.columns-2
+  columns: 2
+.font-italic
+  font-style: italic !important
+.sin-borde
+  border: 0px !important
+.br-top
+  border-top-left-radius: 20px 
+  border-top-right-radius: 20px 
+.br-left
+  border-top-left-radius: 20px 
+  border-bottom-left-radius: 20px 
+.br-right
+  border-top-right-radius: 20px 
+  border-bottom-right-radius: 20px 
+.tabs-a__tab__text 
+  white-space: normal
+.l-circle i.fa-circle
+  font-size: 6px
+  top: 10px !important
+
 .p-full-width
-  padding: 3rem 3.5rem!important;
+  padding: 3rem 3.5rem!important
 .bg-full-width
   background-size: cover
   background-repeat: no-repeat
@@ -80,10 +139,15 @@ figcaption
 
 .w-80x
   width: 80px
-.br-tr
-  border-top-right-radius: 60px
 .br-tl
   border-top-left-radius: 60px
+.br-tr
+  border-top-right-radius: 60px
+.bri-tl
+  border-radius: 20px
+  border-top-left-radius: 60px
+.bri
+  border-radius: 20px
 
 .subt
   display: flex
@@ -132,6 +196,32 @@ figcaption
       height: 100%
       top: 0
       z-index: 0
+.formula
+  display: inline-flex
+  align-items: center
+  gap: 0.5em
+  color: $color-sistema-texto
+  &__operator,
+  &__result
+    white-space: nowrap
+  &--result
+    font-size: 20px
+    .fraction__numerator,
+    .fraction__denominator
+      padding-left: 1em
+      padding-right: 1em
+.fraction
+  display: inline-flex
+  flex-direction: column
+  align-items: stretch
+  text-align: center
+  &__numerator
+    padding: 0 0.5em 0.4em
+  &__denominator
+    padding: 0.4em 0.5em 0
+    border-top: 1px solid $color-sistema-texto
+
+
 .acordion
   &__accion__btn--b, &__accion__btn--a
     border-color: $color-acento-botones
@@ -142,18 +232,17 @@ figcaption
     background-color: #55AFD4 
     .acordion__titulo h3
       color: $color-sistema-texto
-.fa-lista
-  li
-    display: flex !important
-    align-items: flex-start
-  li:before
-    position: relative
-    margin-right: 7px
-    font-size: 1.4rem 
+  &.tipob
+    .acordion__activo
+      background-color: #BBDFEE
 .tabla-a.color-primario
   thead th
     background-color: #A1B0B9
     text-align: left
+.pasos-a
+  &__item .text-end
+    h3, p
+      text-align: left
 
 
 

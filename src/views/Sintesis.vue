@@ -6,7 +6,7 @@
     
 
     .row.justify-content-center
-      .col-lg-10.mb-5.bgs.p-4.brad
+      .col-lg-11.mb-5.p-4
         figure
           img(src="@/assets/curso/sintesis.svg", alt="Mapa jerárquico de la planeación técnica del proceso de corte, organizado en cuatro temas principales y once subtemas.")
       .col-auto

@@ -4,9 +4,9 @@
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
       // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad                
+      #Actividad
       <ActividadController :cuestionario="cuestionario"/>
-  
+
   </template>
 
 <script>
@@ -19,10 +19,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Planeación técnica del proceso de corte',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> verificar la planeación del trazo, extendido y corte mediante criterios de calidad, capacidad y seguridad.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
@@ -30,61 +30,59 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Cuál es la finalidad principal de la planeación del trazo en confección?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Modificar los patrones para corregir sus dimensiones originales.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+              texto: 'Distribuir piezas aprobadas respetando las restricciones y aprovechando el material.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'Aumentar los márgenes de costura para facilitar el corte.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: 'Definir nuevas medidas corporales para cada talla requerida.',
               esCorrecta: false,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué información debe verificarse antes de iniciar la distribución de patrones?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
+              texto: 'La referencia, las tallas, el ancho útil y el sentido del material.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'El color del mobiliario, la iluminación y los descansos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
-              esCorrecta: true,
+              texto: 'La cantidad de etiquetas, los empaques y los despachos.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'El orden de planchado, las agujas y los acabados.',
               esCorrecta: false,
             },
           ],
@@ -93,29 +91,29 @@ export default {
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto:
+            '¿Qué corresponde realizar si el juego de patrones presenta una pieza faltante?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
+              texto: 'Duplicar otra pieza semejante para completar el juego.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Reducir el número de prendas previsto en la orden.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto: 'Modificar el trazo para compensar el componente ausente.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
+              texto: 'Suspender la liberación y solicitar la revisión documental.',
               esCorrecta: true,
             },
           ],
@@ -125,28 +123,28 @@ export default {
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué ventaja ofrece el trazo digital frente al método manual?',
+          imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Elimina la necesidad de comprobar los patrones y tallas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Autoriza cualquier giro para aprovechar toda la superficie.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
+              texto: 'Permite comparar configuraciones y conservar versiones registradas.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Sustituye los controles de material durante el extendido.',
               esCorrecta: false,
             },
           ],
@@ -155,30 +153,29 @@ export default {
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto:
+            '¿Cómo debe configurarse un trazo para un material con pelo direccional?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+              texto: 'Con piezas giradas libremente para reducir la longitud.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Con todas las piezas orientadas en un sentido autorizado.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto: 'Con piezas alternadas para equilibrar las capas cortadas.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Con orientaciones variables según el espacio disponible.',
               esCorrecta: false,
             },
           ],
@@ -188,28 +185,28 @@ export default {
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué expresa la eficiencia geométrica de un trazo?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
+              texto: 'El porcentaje del área del trazo ocupada por las piezas.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'El número de operarios que participan en la operación.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto: 'La cantidad de rollos almacenados para la producción.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'La velocidad máxima que alcanza el equipo de corte.',
               esCorrecta: false,
             },
           ],
@@ -219,29 +216,29 @@ export default {
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué condición define el ancho útil considerado durante el trazo?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'La medida nominal consignada en la etiqueta del proveedor.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
+              texto: 'La distancia máxima entre los extremos de la mesa.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+              texto: 'La anchura completa incluyendo orillos y zonas dañadas.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
-              esCorrecta: false,
+              texto: 'El ancho aprovechable, excluidos los orillos y las zonas restringidas.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -250,28 +247,28 @@ export default {
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué debe priorizarse al trazar una camisa elaborada en tela de cuadros?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'La rotación libre de piezas para alcanzar mayor eficiencia.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'La reducción de todas las separaciones entre contornos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'La coincidencia del motivo en las uniones especificadas.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'La colocación de todos los componentes por tamaño.',
               esCorrecta: false,
             },
           ],
@@ -281,19 +278,29 @@ export default {
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuál es el propósito técnico del extendido de materiales?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Acumular tela sin controlar la orientación de sus caras.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Formar capas alineadas, estables y compatibles con el trazo.',
               esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Cambiar la geometría de los patrones durante la preparación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Separar definitivamente las piezas antes de realizar el corte.',
+              esCorrecta: false,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -302,18 +309,28 @@ export default {
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué caracteriza el modo de extendido cara a cara?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Las superficies visibles de dos capas consecutivas quedan enfrentadas.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Todas las capas conservan la cara visible hacia arriba.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Los extremos se doblan alternadamente en cada recorrido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El material permanece cerrado con dos superficies tubulares.',
               esCorrecta: false,
             },
           ],
@@ -323,18 +340,28 @@ export default {
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué procedimiento corresponde a la relajación de un tejido elástico?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Aplicar siempre un periodo fijo de veinticuatro horas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Estirar cada capa hasta completar la longitud requerida.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Aumentar la tensión del rollo para corregir el ancho.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Respetar las condiciones específicas de estabilización documentadas.',
               esCorrecta: true,
             },
           ],
@@ -344,18 +371,28 @@ export default {
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Cuántas capas requiere una orden de 80 prendas si el trazo incluye dos prendas completas por capa?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Veinte capas distribuidas según el color del material.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Ochenta capas para reproducir cada pieza del trazo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Cuarenta capas, según el rendimiento del trazo.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Ciento sesenta capas considerando las dos prendas completas.',
               esCorrecta: false,
             },
           ],
@@ -365,18 +402,28 @@ export default {
         {
           id: 13,
           texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué efecto puede ocasionar una tensión excesiva durante el extendido?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'La recuperación del tejido y la contracción posterior al corte.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'La mejora permanente de la estabilidad de las capas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'El aumento uniforme del ancho útil sin deformaciones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La eliminación de las restricciones de sentido del material.',
               esCorrecta: false,
             },
           ],
@@ -386,19 +433,29 @@ export default {
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            '¿Qué debe hacerse cuando un empalme atraviesa el área de una pieza?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Mantenerlo si permite consumir completamente el rollo.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Excluirlo o reubicarlo conforme al procedimiento establecido.',
               esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Ocultarlo bajo las capas superiores del mismo tendido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Aumentar la velocidad de corte para evitar desplazamientos.',
+              esCorrecta: false,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -407,18 +464,183 @@ export default {
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué verificación permite autorizar el extendido continuo de un lote?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'La disponibilidad de paquetes para la operación de ensamble.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'El número total de rollos registrados en inventario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La confirmación de la primera capa en longitud, tensión y alineación.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'La inspección del producto terminado de la orden anterior.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Qué equipo es apropiado para perfilar piezas pequeñas con curvas complejas?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Una cortadora circular sobre tendidos altos y compactos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Una tijera larga sobre paquetes de numerosas capas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Una prensa sin troquel adaptado a las piezas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Una cuchilla banda con bloques previamente estabilizados.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Qué puede provocar diferencias entre las piezas superiores e inferiores del tendido?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'El etiquetado anticipado de los paquetes terminados.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La flexión de la cuchilla o una altura excesiva del tendido.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'El registro correcto de la cantidad de capas cortadas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La correspondencia entre la orden y el trazo aprobado.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué debe verificarse al ejecutar piquetes en piezas cortadas?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Su posición y profundidad según las referencias autorizadas.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Su profundidad máxima sin considerar el margen de costura.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Su repetición adicional para aumentar la visibilidad exterior.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Su ejecución indistinta sobre cualquier borde de la pieza.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Qué componentes forman parte del tiempo completo de un ciclo de corte?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Únicamente el desplazamiento efectivo de la cuchilla.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Solo los tiempos de ensamble y empaque de prendas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Exclusivamente el transporte de rollos hacia la mesa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Alistamiento, posicionamiento, corte, marcación, verificación y evacuación.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 20,
+          texto:
+            '¿Qué corresponde hacer si la guarda de seguridad dificulta un corte previsto?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Retirarla temporalmente para completar la pieza seleccionada.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Reducir la protección del equipo mientras dura el corte.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Revisar la configuración, altura o tecnología antes de continuar.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Incrementar la velocidad para disminuir el tiempo de exposición.',
               esCorrecta: false,
             },
           ],
@@ -426,7 +648,7 @@ export default {
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado: '<em>¡Excelente! Ha superado la actividad.</em>',
       mensaje_final_reprobado:
         'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },

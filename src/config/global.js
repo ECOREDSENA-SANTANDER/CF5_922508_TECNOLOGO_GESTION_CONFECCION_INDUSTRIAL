@@ -260,7 +260,7 @@ export default {
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: '---',
+          nombre: 'Edison Eduardo Mantilla Cuadros',
           cargo: 'Responsable de línea de producción',
           centro: 'Centro Agroturístico - Regional Santander',
         },
@@ -270,8 +270,13 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: ' ',
-          cargo: ' ',
+          nombre: 'Paola Angélica Castro Salazar ',
+          cargo: 'Experta temática ',
+          centro: 'Centro Agroturístico - Regional Santander',
+        },
+        {
+          nombre: 'Erika Fernanda Mejía Pinzón ',
+          cargo: 'Evaluadora instruccional ',
           centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
@@ -280,13 +285,13 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: ' ',
+          nombre: 'Julian Fernando Vanegas Vega',
           cargo: 'Diseñador de contenidos',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
           nombre: 'Andrea Paola Botello De la Rosa',
-          cargo: 'Desarrollador <i>full stack</i>',
+          cargo: 'Desarrolladora <i>full stack</i>',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
