@@ -117,6 +117,21 @@ figcaption
   background-repeat: no-repeat
   background-position: bottom
   margin-inline: -3.3rem
+.bgcompl
+  &-1
+    background: #BBDFEE
+    margin-inline: -3.4rem
+    @media screen and (max-width: 992px)
+      margin-inline: -3rem  
+    @media screen and (max-width: 767px)
+      margin-inline: -1.4rem 
+  &-2
+    background: #513013
+    margin-inline: -3.4rem
+    @media screen and (max-width: 992px)
+      margin-inline: -3rem  
+    @media screen and (max-width: 767px)
+      margin-inline: -1.4rem 
 .bg-fondo
   &-1
     background-image: url(../assets/curso/temas/bg/1.png)
@@ -312,9 +327,40 @@ figcaption
 .tabs-a
   &__tab
     background-color: #55AFD4
-.linea-tiempo-c__header__btn--right, .linea-tiempo-c__header__btn--left
-  background-color: $color-acento-botones
-  border-color: $color-acento-botones
+.linea-tiempo-c
+  &__header__btn--right, &__header__btn--left
+    background-color: $color-acento-botones
+    border-color: $color-acento-botones
+  &__header__item__dot
+    border: 3px solid #FFF
+  &__header__item__line-container:after, &__header__item__line-container:before
+    background-color: #FFF
+.pasos-b
+  &__header__btn--left, &__header__btn--right
+    background-color: $color-acento-botones
+    border-color: $color-acento-botones
+.linea-tiempo-d
+  &__item--selected .tarjeta 
+    background-color: #FFF7EA
+  &__item__number, &__item__content
+    background-color: #BBDFEE
+    font-weight: bold
+.tarjeta-audio__texto
+  color: $color-sistema-texto !important
+  font-style: normal !important
+.slyder-a
+  &__btn--sigt, &__btn--atrs
+    background-color: $color-acento-botones
+    border-color: $color-acento-botones
+    opacity: 0.9
+  &__bullets__item
+    background-color: #FFF7EA
+    border-color: #FFF7EA
+    &--active
+      background-color: $color-secundario
+      border-color: $color-secundario
+.slyder-f__btn i 
+  color: $color-acento-botones
 @media screen and (min-width: $bp-min-xl)
   .tabs-a.t2
     .col-xl-3

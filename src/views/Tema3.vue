@@ -11,7 +11,7 @@
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/1.png')})`}"
       )
-      .bloque-texto-g__texto.bri.p-4
+      .bloque-texto-g__texto.bri.p-4.py-xl-5
         p.mb-0 La ejecución del corte transforma el tendido en piezas con geometría, dimensiones, cantidad e identificación correspondientes al trazo aprobado. La operación debe conservar los contornos, piquetes, perforaciones y demás referencias requeridas para las etapas posteriores, sin alterar la orientación ni la relación entre las capas.
     
     p La calidad no se determina únicamente por la coincidencia entre la capa superior y el trazo. También debe comprobarse la correspondencia vertical del corte, debido a que la flexión de la cuchilla, el desplazamiento de las capas o la altura excesiva pueden producir diferencias entre las piezas superiores, intermedias e inferiores. Un tendido aparentemente conforme puede generar componentes dimensionalmente distintos cuando la herramienta no permanece perpendicular a la mesa.
@@ -126,6 +126,7 @@
         .col-md-5.d-none.d-lg-block
           img(src='@/assets/curso/temas/t3/10.png', alt='')
     
+
     Separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1  Corte manual y asistido
@@ -148,21 +149,20 @@
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/12.png', alt='')
       
-    p El corte manual ofrece flexibilidad y requiere menor preparación tecnológica, pero presenta una capacidad limitada frente a órdenes extensas. Su repetibilidad depende en mayor medida de la ejecución y puede disminuir cuando aumenta la longitud del recorrido, la complejidad del contorno o el número de capas.
+    p.mb-5 El corte manual ofrece flexibilidad y requiere menor preparación tecnológica, pero presenta una capacidad limitada frente a órdenes extensas. Su repetibilidad depende en mayor medida de la ejecución y puede disminuir cuando aumenta la longitud del recorrido, la complejidad del contorno o el número de capas.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Corte asistido con máquina portátil
     
-
-    .row.justify-content-center.align-items-center.mb-5
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-5.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/13.png', alt='')
       .col-lg-7(data-aos="fade-left")
         p Las máquinas portátiles incorporan un motor que acciona una cuchilla recta o circular. El equipo se desplaza alrededor de los contornos mientras la persona responsable dirige la trayectoria. La energía motriz reduce el esfuerzo necesario para atravesar el tendido, pero no sustituye el control requerido para conservar la línea de corte.
         p La máquina de cuchilla recta admite tendidos de mayor altura y puede recorrer curvas, tramos rectos y cambios de dirección. Su versatilidad favorece el corte de componentes de diferentes tamaños. Sin embargo, la cuchilla puede flexionarse cuando se aplican giros forzados, se trabaja con una altura inadecuada o se utiliza un filo deficiente. Esa desviación modifica las dimensiones de las capas inferiores.
     
-    p La máquina de cuchilla circular utiliza un disco giratorio. Resulta funcional para tendidos bajos, piezas amplias y trayectorias con curvas abiertas. El diámetro del disco limita la capacidad para resolver cambios cerrados, ángulos interiores o radios pequeños. Intentar forzar la herramienta en estas condiciones puede alejar el corte del contorno previsto.
+    p.mb-5 La máquina de cuchilla circular utiliza un disco giratorio. Resulta funcional para tendidos bajos, piezas amplias y trayectorias con curvas abiertas. El diámetro del disco limita la capacidad para resolver cambios cerrados, ángulos interiores o radios pequeños. Intentar forzar la herramienta en estas condiciones puede alejar el corte del contorno previsto.
       
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
@@ -201,32 +201,32 @@
               th Limitación principal
           tbody
             tr
-              th Manual con tijera
+              td.fw-bold Manual con tijera
               td La herramienta se acciona y se guía directamente.
               td Se utiliza en muestras, reposiciones, capas individuales y piezas de baja complejidad.
               td Presenta capacidad reducida y mayor dependencia de la destreza manual.
             tr
-              th Portátil con cuchilla recta
+              td.fw-bold Portátil con cuchilla recta
               td Una cuchilla vertical motorizada atraviesa el tendido mientras el equipo recorre el contorno.
               td Se emplea en piezas grandes y medianas, trayectorias variadas y tendidos de altura compatible.
               td Puede presentar flexión de la cuchilla y desviación en curvas cerradas.
             tr
-              th Portátil con cuchilla circular
+              td.fw-bold Portátil con cuchilla circular
               td Un disco motorizado corta el material mientras se desplaza sobre la mesa.
               td Resulta adecuado para tendidos bajos, líneas amplias y curvas abiertas.
               td Su geometría dificulta la ejecución de radios pequeños y ángulos interiores.
             tr
-              th Fijo con cuchilla banda
+              td.fw-bold Fijo con cuchilla banda
               td El bloque de material se conduce alrededor de una hoja continua estacionaria.
               td Se utiliza en piezas pequeñas, contornos precisos y bloques previamente seccionados.
               td Exige trasladar y controlar el bloque cerca del elemento cortante.
             tr
-              th Troquelado
+              td.fw-bold Troquelado
               td Una matriz con la forma requerida presiona y separa el material.
               td Se aplica en componentes repetitivos, pequeños y de geometría estable.
               td Requiere un troquel específico y pierde flexibilidad ante cambios de diseño.
             tr
-              th Automatizado con control numérico
+              td.fw-bold Automatizado con control numérico
               td El cabezal reproduce trayectorias definidas por un archivo digital.
               td Se emplea en producción repetitiva, trazos digitales y procesos integrados.
               td Exige inversión, configuración especializada y condiciones técnicas de soporte.
@@ -238,7 +238,6 @@
 
     p La secuencia debe planearse de acuerdo con la geometría del trazo, la estabilidad del tendido y la herramienta utilizada. No existe un orden único aplicable a todas las configuraciones. La prioridad consiste en evitar que la separación de una zona reduzca el soporte requerido para cortar las piezas restantes.
     p En términos operativos, la ejecución comprende:
-
 
     PasosA.color-secundario.mb-5(tipo="n" data-aos="fade")
       .row.align-items-center
@@ -311,13 +310,15 @@
         p Los piquetes transfieren referencias ubicadas sobre los bordes de las piezas. Se utilizan para orientar uniones, dobleces, correspondencias y posiciones definidas en la documentación técnica. Deben presentar profundidad y forma controladas: un piquete demasiado superficial puede desaparecer durante la manipulación; uno excesivo puede sobrepasar el margen de costura y debilitar una zona visible.
         p Las perforaciones trasladan puntos interiores mediante taladros, punzones u otros dispositivos. Su aplicación depende del material y de la especificación del producto. En tejidos sensibles, una perforación puede dejar una marca permanente; en otros casos se emplean métodos de señalización que no alteran la estructura de la pieza.
     
-    .titulo-sexto.color-acento-contenido.mb-3
-      h5 Figura 2.
-      span Piquetes y perforaciones en piezas de confección
-    
-    img(src='@/assets/curso/temas/t3/26.svg', alt='Esquema de una pieza de confección con piquetes en los bordes, perforaciones interiores y flecha que indica la dirección del hilo de tela.')
+    .mb-4(data-aos="fade-down")
+      .titulo-sexto.color-acento-contenido.mb-3
+        h5 Figura 2.
+        span Piquetes y perforaciones en piezas de confección
+      figure
+        img(src='@/assets/curso/temas/t3/26.svg', alt='Esquema de una pieza de confección con piquetes en los bordes, perforaciones interiores y flecha que indica la dirección del hilo de tela.')
     
     p Las referencias no deben agregarse por criterio individual. Su ubicación y función deben proceder del patrón, del trazo o de la documentación autorizada. La incorporación de marcas innecesarias aumenta el riesgo de daño y puede generar interpretaciones erróneas durante el ensamble.
+
 
     Separador
     #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -325,13 +326,13 @@
       
     img.d-none.d-lg-block.mb-4(src='@/assets/curso/temas/t3/27.png', alt='')
 
-    p La selección de herramientas y maquinaria debe considerar la función específica que cumple cada recurso. Algunas herramientas separan los contornos; otras dividen bloques, ejecutan piquetes, transfieren marcas o estabilizan el material. Su disponibilidad no implica que puedan intercambiarse sin evaluar las consecuencias sobre la precisión y la calidad.
+    p.mb-5 La selección de herramientas y maquinaria debe considerar la función específica que cumple cada recurso. Algunas herramientas separan los contornos; otras dividen bloques, ejecutan piquetes, transfieren marcas o estabilizan el material. Su disponibilidad no implica que puedan intercambiarse sin evaluar las consecuencias sobre la precisión y la calidad.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Tijeras y cizallas
     
-    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/28.png')})`}"
       )
@@ -355,13 +356,13 @@
           br
           | La altura útil de la hoja no equivale automáticamente a la altura máxima recomendable del tendido. Debe conservarse un margen que permita operar la guarda y mantener el control de la cuchilla. Además, la capacidad disminuye cuando el material ofrece mayor resistencia, se comprime de forma desigual o exige curvas cerradas.
     
-    p El afilado debe realizarse con la frecuencia necesaria para conservar un corte limpio. Una cuchilla sin filo incrementa la resistencia, favorece la flexión y puede generar bordes deshilachados. El afilado excesivo también reduce la vida útil de la hoja; por ello, la decisión debe basarse en la condición observada y en las recomendaciones del fabricante.
+    p.mb-5 El afilado debe realizarse con la frecuencia necesaria para conservar un corte limpio. Una cuchilla sin filo incrementa la resistencia, favorece la flexión y puede generar bordes deshilachados. El afilado excesivo también reduce la vida útil de la hoja; por ello, la decisión debe basarse en la condición observada y en las recomendaciones del fabricante.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Máquina de cuchilla circular
     
-    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/30.png')})`}"
       )
@@ -375,7 +376,7 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Máquina de cuchilla banda
     
-    .bloque-texto-g.bloque-texto-g--inverso.color-secundario.br-tl.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bloque-texto-g--inverso.color-secundario.br-tl.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/31.png')})`}"
       )
@@ -389,7 +390,7 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Prensas y troqueles
     
-    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bg-color-3.br-tr.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/32.png')})`}"
       )
@@ -403,7 +404,7 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Equipos de corte automatizado
     
-    .bloque-texto-g.bloque-texto-g--inverso.color-secundario.br-tl.p-3.p-sm-4.p-md-5.mb-4(data-aos="fade")
+    .bloque-texto-g.bloque-texto-g--inverso.color-secundario.br-tl.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade")
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require_src('@/assets/curso/temas/t3/33.png')})`}"
       )
@@ -417,136 +418,132 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Herramientas y maquinaria para la ejecución del corte
     
-    TabsC.color-primario
+    TabsC.color-primario.mb-5(data-aos="fade")
       .py-3.py-md-4(titulo="Herramientas de corte manual y portátil")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/34.png', alt='')
-          .col-md-7
-            h4.mb-0 Tijera industrial
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/34.png', alt='')
+          .col-11.col-lg-6
+            h5.mb-0 Tijera industrial
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] separar materiales en capas individuales o tendidos bajos.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] longitud de hoja, filo y facilidad para seguir el contorno.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] verificar alineación, limpieza, ajuste y condición del filo.
-            h4.mb-0 Cuchilla recta
+            h5.mb-0 Cuchilla recta
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] cortar tendidos de altura media o alta mediante desplazamiento portátil.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] altura útil, potencia, carrera de la hoja y maniobrabilidad.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] controlar perpendicularidad, afilado, guarda y flexión.
-            h4.mb-0 Cuchilla circular
+            h5.mb-0 Cuchilla circular
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] cortar tendidos bajos y trayectorias amplias.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] diámetro del disco, altura útil y radio de giro.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] evitar curvas incompatibles y verificar la protección del disco.
       .py-3.py-md-4(titulo="Equipos fijos y de separación")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/35.png', alt='')
-          .col-md-7
-            h4.mb-0 Cuchilla banda
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/35.png', alt='')
+          .col-11.col-lg-6
+            h5.mb-0 Cuchilla banda
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] perfilar bloques y piezas de geometría compleja.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] altura libre, velocidad de hoja y espacio de maniobra.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] mantener compacto el bloque y ajustar la guarda.
-            h4.mb-0 Cortadora de extremos
+            h5.mb-0 Cortadora de extremos
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] separar transversalmente las capas durante el extendido.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:]  ancho de recorrido y espesor admisible.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] conservar un corte recto sin desplazar las capas.
-            h4.mb-0 Prensa troqueladora
+            h5.mb-0 Prensa troqueladora
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] cortar componentes mediante presión sobre una matriz.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] fuerza, área de trabajo y altura admisible.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerrido:] revisar estado del troquel, posicionamiento y protección del área de presión.
       .py-3.py-md-4(titulo="Equipos para referencias y marcas")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/36.png', alt='')
-          .col-md-7
-            h4.mb-0 Taladro para tela
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/36.png', alt='')
+          .col-11.col-lg-6
+            h5.mb-0 Taladro para tela
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] transferir referencias interiores a través del tendido.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] profundidad, diámetro y tipo de aguja o punzón.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] verificar que la marca no afecte una zona visible.
-            h4.mb-0 Piqueteadora
+            h5.mb-0 Piqueteadora
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] realizar marcas controladas sobre los bordes.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] forma y profundidad del piquete.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] evitar que la marca sobrepase el margen autorizado.      
       .py-3.py-md-4(titulo="Automatización y sujeción")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/37.png', alt='')
-          .col-md-7
-            h4.mb-0 Sistema automatizado
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/37.png', alt='')
+          .col-11.col-lg-6
+            h5.mb-0 Sistema automatizado
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] ejecutar trayectorias programadas mediante control numérico.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] área útil, altura, velocidad, aceleración y tecnología de corte.
               li 
                 i.lista-ul__vineta
                 span.mb-0 #[b Control requerido:] validar archivo, parámetros, vacío, secuencia y versión del trazo.
-            h4.mb-0 Dispositivo de sujeción
+            h5.mb-0 Dispositivo de sujeción
             .ul.lista-ul.fa-lista
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Función principal:] mantener la posición del tendido o de los bloques.
-              li 
+              li.mb-0 
                 i.lista-ul__vineta
                 span.mb-0 #[b Capacidad técnica determinante:] presión y superficie de contacto.
               li 
@@ -558,10 +555,10 @@
       h3.mb-0.mx-3 Condición de las herramientas
     
     .row.mb-4
-      .col-lg-7
+      .col-lg-7(data-aos="fade-right")
         p La herramienta debe revisarse antes, durante y después de su utilización. Un borde defectuoso no siempre es consecuencia del material; también puede indicar pérdida de filo, acumulación de residuos, vibración, desajuste o selección incorrecta de la cuchilla.
         p El mantenimiento no debe limitarse a responder ante una falla. La limpieza, el cambio de hojas, la revisión de cables, el ajuste de guardas y la comprobación de los mandos deben programarse de acuerdo con el uso y con las indicaciones técnicas del fabricante. Las intervenciones que impliquen acceso a partes móviles requieren detener, aislar y asegurar el equipo según el procedimiento establecido.
-      .col-lg-5
+      .col-lg-5.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/38.png', alt='')
     
     .subt.mb-4(data-aos='fade-right')
@@ -569,13 +566,13 @@
       h3.mb-0.mx-3 Seguridad durante el corte
     
     .row.mb-4
-      .col-lg-5
+      .col-lg-5.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/39.png', alt='')
-      .col-lg-7
+      .col-lg-7(data-aos="fade-left")
         p Las cuchillas rectas, circulares y de banda exponen a peligros mecánicos que requieren guardas, procedimientos, capacitación y condiciones de operación controladas. ISO 12100 establece principios para identificar peligros, valorar riesgos y aplicar medidas de reducción durante el ciclo de vida de la maquinaria. La OIT también señala que el equipo debe ser adecuado para su finalidad, conservar sus protecciones y utilizarse bajo condiciones previamente definidas (ISO, 2010; International Labour Organization, 2013). 
         p Los elementos de protección no corrigen una práctica insegura ni reemplazan las guardas del equipo. La selección debe derivarse de los peligros identificados y de las condiciones reales de operación. Tampoco resulta admisible retirar dispositivos de seguridad para aumentar la velocidad o facilitar el paso de bloques.
     
-    .cajon.color-acento-contenido.bg-color-4.p-4.mb-5
+    .cajon.color-acento-contenido.bg-color-4.p-4.mb-5(data-aos="fade")
       h4 Condición de operación
       p.mb-0 Si la guarda impide ejecutar el corte previsto, la respuesta técnica no consiste en retirarla. Debe revisarse la altura del tendido, la geometría del bloque, la configuración del equipo o la selección de otra tecnología.
     
@@ -583,9 +580,9 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Defectos asociados con la herramienta y la ejecución
     
-    p Durante la ejecución del corte pueden presentarse defectos asociados con las condiciones de las herramientas y su utilización. La siguiente tabla relaciona estas irregularidades con sus manifestaciones y posibles causas técnicas.
+    p.mb-4 Durante la ejecución del corte pueden presentarse defectos asociados con las condiciones de las herramientas y su utilización. La siguiente tabla relaciona estas irregularidades con sus manifestaciones y posibles causas técnicas.
 
-    .mb-5(data-aos="fade-down")
+    .mb-0(data-aos="fade-down")
       .titulo-sexto.color-acento-contenido.mb-3
         h5 Tabla 5.
         span Defectos del corte y posibles causas técnicas
@@ -598,55 +595,56 @@
               th Posibles causas
           tbody
             tr
-              th Borde deshilachado
+              td.fw-bold Borde deshilachado
               td Las fibras quedan sueltas o desgarradas sobre el contorno.
               td Puede originarse por pérdida de filo, velocidad inadecuada o incompatibilidad entre cuchilla y material.
             tr
-              th Borde ondulado
+              td.fw-bold Borde ondulado
               td La línea presenta variaciones repetitivas respecto del contorno.
               td Puede relacionarse con vibración, conducción irregular o falta de estabilidad del tendido.
             tr
-              th Desviación vertical
+              td.fw-bold Desviación vertical
               td Las piezas inferiores difieren de las superiores.
               td Puede producirse por flexión de la cuchilla, altura excesiva o presión lateral.
             tr
-              th Esquina redondeada
+              td.fw-bold Esquina redondeada
               td Un ángulo definido aparece suavizado o incompleto.
               td Puede deberse al radio de la herramienta o a un cambio de dirección mal ejecutado.
             tr
-              th Piquete excesivo
+              td.fw-bold Piquete excesivo
               td La marca supera la profundidad permitida.
               td Puede originarse por regulación incorrecta o intervención repetida.
             tr
-              th Piquete insuficiente
+              td.fw-bold Piquete insuficiente
               td La referencia no resulta visible o desaparece durante la manipulación.
               td Puede relacionarse con profundidad reducida o posición inexacta.
             tr
-              th Perforación desplazada
+              td.fw-bold Perforación desplazada
               td La marca interior no coincide con la referencia del patrón.
               td Puede producirse por inclinación del taladro o desplazamiento de las capas.
             tr
-              th Fusión del borde
+              td.fw-bold Fusión del borde
               td Las capas quedan adheridas o endurecidas.
               td Puede relacionarse con fricción, velocidad, temperatura o tecnología térmica incompatible.
             tr
-              th Contaminación
+              td.fw-bold Contaminación
               td El material presenta residuos, aceite o marcas del equipo.
               td Puede originarse por limpieza insuficiente, lubricación excesiva o contacto con superficies contaminadas.
             tr
-              th Piezas incompletas
+              td.fw-bold Piezas incompletas
               td Una parte del contorno queda fuera del material o sin cortar.
               td Puede deberse a capas cortas, desalineación, pérdida del trazo o trayectoria incompleta.
     
+
     Separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.3  Capacidades y criterios de selección
     
-    .row.justify-content-center.mb-4(data-aos="fade")
-      .col-lg-5.pe-lg-0.d-none.d-lg-block
+    .row.justify-content-center.mb-5(data-aos="fade")
+      .col-lg-4.pe-lg-0.d-none.d-lg-block
         img(src='@/assets/curso/temas/t3/40.svg', alt='')
-      .col-lg-7.ps-lg-0
-        .bg-color-2.br-tr.p-4.pt-5.h-100
+      .col-lg-8.ps-lg-0
+        .bg-color-2.br-tr.p-4.p-xl-5.h-100
           .row.mb-3
             .col-lg-2
               img.w-80x.d-none.d-lg-block.mb-3(src='@/assets/curso/temas/t3/41.svg', alt='')
@@ -658,166 +656,166 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Capacidad por ciclo de corte
     
-    .row.mb-4
-      .col-lg-7
+    .row.align-items-center.mb-4
+      .col-lg-7(data-aos="fade-right")
         p Cuando el trazo contiene una combinación definida de prendas, la cantidad teórica obtenida en un ciclo puede calcularse así:
-        h3 Unidades por ciclo = Prendas completas por capa × Número de capas
+        h3 Unidades por ciclo = Prendas completas por capa x Número de capas
         p Si un trazo contiene cuatro prendas completas por capa y el tendido está formado por 50 capas:
-        h3 4 × 50 = 200 prendas
-        p El resultado representa una cantidad teórica. Las unidades realmente liberadas pueden disminuir cuando existen capas incompletas, piezas defectuosas, daños durante el corte o reposiciones pendientes.
-      .col-lg-5
+        h3 4 x 50 = 200 prendas
+        p.mb-0 El resultado representa una cantidad teórica. Las unidades realmente liberadas pueden disminuir cuando existen capas incompletas, piezas defectuosas, daños durante el corte o reposiciones pendientes.
+      .col-lg-5.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/42.png', alt='')
     
-    p Cuando el trazo contiene varias tallas, la cantidad debe calcularse por separado:
+    p.mb-4 Cuando el trazo contiene varias tallas, la cantidad debe calcularse por separado:
 
-    .row.mb-5
+    .row.mb-4
       .col-lg-6
         .subt-2.mb-4(data-aos='fade-right')
           img(src='@/assets/curso/temas/t1/24.svg', alt='')
           .text.mx-1
             h4.mb-0.ms-2.me-4 Fórmula de aplicación
-        h3 Qᵢ = Mᵢ × C
+        h3 Qᵢ = Mᵢ x C
         p Donde:
-        ul.lista-ul--color
-          li 
-            i.fas.fa-brain
-            | Qᵢ corresponde a la cantidad obtenida de la talla i.
-          li 
-            i.fas.fa-brain
-            | Mᵢ representa la cantidad de prendas de la talla i incluida en el trazo.
-          li 
-            i.fas.fa-brain
-            | C corresponde al número de capas cortadas.
+        ul.lista-ul--color.fa-lista.lista-lana
+          li
+            span.mb-0
+            p.mb-0 Qᵢ corresponde a la cantidad obtenida de la talla i.
+          li
+            span.mb-0
+            p.mb-0 Mᵢ representa la cantidad de prendas de la talla i incluida en el trazo.
+          li
+            span.mb-0
+            p.mb-0 C corresponde al número de capas cortadas.
       .col-lg-6
-        h4 Ejemplo de capacidad por talla
+        h5 Ejemplo de capacidad por talla
         p Un trazo contiene una prenda S, dos M y una L. Si se cortan 40 capas, el resultado teórico será:
-        ul.lista-ul--color
-          li 
-            i.fas.fa-brain
-            | Talla S: 1 × 40 = 40 unidades.
-          li 
-            i.fas.fa-brain
-            | Talla M: 2 × 40 = 80 unidades.
-          li 
-            i.fas.fa-brain
-            | Talla L: 1 × 40 = 40 unidades.
+        ul.lista-ul--color.fa-lista.lista-lana
+          li
+            span.mb-0
+            p.mb-0 Talla S: 1 x 40 = 40 unidades.
+          li
+            span.mb-0
+            p.mb-0 Talla M: 2 x 40 = 80 unidades.
+          li
+            span.mb-0
+            p.mb-0 Talla L: 1 x 40 = 40 unidades.
         p El ciclo produce 160 prendas distribuidas según la proporción del trazo.
     
-    img.d-none.d-lg-block.mb-4(src='@/assets/curso/temas/t3/43.png', alt='')
+    img.d-none.d-lg-block.mb-5(src='@/assets/curso/temas/t3/43.png', alt='')
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Capacidad temporal
     
     p La capacidad por turno debe incorporar el tiempo requerido para preparar, cortar, verificar y evacuar los tendidos. Puede expresarse mediante la siguiente relación:
-    h3 Capacidad por turno = Ciclos conformes por turno × Unidades obtenidas por ciclo
+    h3 Capacidad por turno = Ciclos conformes por turno x Unidades obtenidas por ciclo
     p El número de ciclos no debe calcularse únicamente con el tiempo de desplazamiento de la cuchilla. También intervienen:
     h3 Tiempo del ciclo = Alistamiento + Posicionamiento + Corte + Marcación + Verificación + Evacuación
     p Si una jornada dispone de 420 minutos operativos y cada ciclo completo requiere 70 minutos, la capacidad teórica corresponde a seis ciclos:
     h3 420 / 70 = 6 ciclos
     p Si cada ciclo genera 120 prendas:
-    h3 6 × 120 = 720 prendas por turno
-    p La cifra solo es válida mientras se mantengan la referencia, la altura, la tecnología y las condiciones utilizadas en el cálculo. Un cambio de material o de complejidad puede modificar el tiempo, aunque el número de capas permanezca constante.
+    h3 6 x 120 = 720 prendas por turno
+    p.mb-5 La cifra solo es válida mientras se mantengan la referencia, la altura, la tecnología y las condiciones utilizadas en el cálculo. Un cambio de material o de complejidad puede modificar el tiempo, aunque el número de capas permanezca constante.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Variables de capacidad
     
-    .row.mb-4
-      .col-lg-6
+    .row.mb-5
+      .col-lg-6.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/44.png', alt='')
-      .col-lg-6
-        LineaTiempoD.color-primario
+      .col-lg-6(data-aos="fade-left")
+        LineaTiempoD.color-acento-botones
           .row(numero="1" titulo="Altura del tendido")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Define el número de capas procesadas por ciclo, dentro del límite compatible con la precisión.
+              p Define el número de capas procesadas por ciclo, dentro del límite compatible con la precisión.
           .row(numero="2" titulo="Longitud del trazo")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Modifica el recorrido total y el tiempo requerido para completar el corte.
+              p Modifica el recorrido total y el tiempo requerido para completar el corte.
           .row(numero="3" titulo="Complejidad geométrica")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Incrementa los cambios de dirección, las entradas y el perfilado de piezas pequeñas.
+              p Incrementa los cambios de dirección, las entradas y el perfilado de piezas pequeñas.
           .row(numero="4" titulo="Número de piezas")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Aumenta la cantidad de contornos, piquetes y operaciones de identificación.
+              p Aumenta la cantidad de contornos, piquetes y operaciones de identificación.
           .row(numero="5" titulo="Tipo de material")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Influye en la resistencia, compresibilidad, estabilidad, fricción y desplazamiento entre capas.
+              p Influye en la resistencia, compresibilidad, estabilidad, fricción y desplazamiento entre capas.
           .row(numero="6" titulo="Tecnología utilizada")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Determina la velocidad, la maniobrabilidad, el grado de automatización y las restricciones del proceso.
+              p Determina la velocidad, la maniobrabilidad, el grado de automatización y las restricciones del proceso.
           .row(numero="7" titulo="Estado de la cuchilla")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Afecta el esfuerzo, la limpieza del borde y la continuidad del recorrido.
+              p Afecta el esfuerzo, la limpieza del borde y la continuidad del recorrido.
           .row(numero="8" titulo="Preparación del tendido")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Condiciona la estabilidad y la posibilidad de ejecutar el corte sin interrupciones correctivas.
+              p Condiciona la estabilidad y la posibilidad de ejecutar el corte sin interrupciones correctivas.
           .row(numero="9" titulo="Experiencia técnica")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Influye en la conducción del equipo, la anticipación de trayectorias y el control de las piezas.
+              p Influye en la conducción del equipo, la anticipación de trayectorias y el control de las piezas.
           .row(numero="10" titulo="Verificación de calidad")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Incorpora el tiempo necesario para revisar y liberar las piezas obtenidas.
+              p Incorpora el tiempo necesario para revisar y liberar las piezas obtenidas.
           .row(numero="11" titulo="Cambios de referencia")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Agregan actividades de configuración, limpieza, preparación documental y ajuste.
+              p Agregan actividades de configuración, limpieza, preparación documental y ajuste.
           .row(numero="12" titulo="Disponibilidad del equipo")
             .col-md-12.mb-4.mb-md-0
-              p.text-small Reduce la capacidad cuando existen fallas, mantenimiento o tiempos de espera.
+              p Reduce la capacidad cuando existen fallas, mantenimiento o tiempos de espera.
     
-    .row.mb-4
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+    .row.mb-5
+      .col-lg-6(data-aos='fade-right')
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Criterios técnicos de selección
-        p La herramienta se selecciona mediante la relación entre geometría, material, tendido, volumen y precisión. Elegir únicamente por velocidad puede incrementar el reproceso y las reposiciones; hacerlo solo por precisión puede generar una capacidad insuficiente para el volumen requerido.
-      .col-lg-6
+        p.mb-0 La herramienta se selecciona mediante la relación entre geometría, material, tendido, volumen y precisión. Elegir únicamente por velocidad puede incrementar el reproceso y las reposiciones; hacerlo solo por precisión puede generar una capacidad insuficiente para el volumen requerido.
+      .col-lg-6.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/45.png', alt='')
     
-    .row.mb-4
-      .col-lg-6
+    .row.mb-5
+      .col-lg-6.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t3/46.png', alt='')
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+      .col-lg-6(data-aos="fade-left")
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Geometría de las piezas
         p Las piezas grandes, con trayectorias amplias, pueden cortarse mediante cuchilla recta o circular, según la altura. Los componentes pequeños, los entrantes y las curvas cerradas requieren mayor maniobrabilidad. Cuando el bloque puede trasladarse con estabilidad, la cuchilla banda permite perfilar geometrías complejas.
         p.mb-0 Los troqueles resultan adecuados cuando la forma permanece constante y se repite en cantidades suficientes. Para referencias cambiantes, la fabricación de una matriz específica puede no ser técnicamente conveniente.
     
-    .row.mb-4
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+    .row.mb-5
+      .col-lg-6(data-aos='fade-right')
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Altura del tendido
         p La altura determina la longitud de cuchilla necesaria y la posibilidad de conservar perpendicularidad. Los tendidos bajos ofrecen mayor flexibilidad en la selección; los altos requieren equipos con capacidad suficiente y control de desviación.
         p.mb-0 La altura no debe aumentarse para reducir el número de ciclos si esta decisión deteriora la precisión. Una mayor cantidad de capas por corte deja de representar una ventaja cuando genera piezas dimensionalmente distintas o incrementa las reposiciones.
-      .col-lg-6
+      .col-lg-6.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/47.png', alt='')
     
-    .row.mb-4
-      .col-lg-6
+    .row.mb-5
+      .col-lg-6.d-none.d-lg-block(data-aos='fade-right')
         img(src='@/assets/curso/temas/t3/48.png', alt='')
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+      .col-lg-6(data-aos="fade-left")
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Propiedades del material
         p Los materiales elásticos pueden deformarse por presión o arrastre; los resbaladizos favorecen el desplazamiento entre capas; los sintéticos pueden reaccionar al calor generado por fricción o por tecnologías térmicas. Los recubrimientos, espesores y acabados superficiales también modifican la respuesta frente a la herramienta. La prueba inicial debe comprobar el borde, la estabilidad dimensional y la separación entre capas. Cuando el material cambia, no debe asumirse que los parámetros anteriores continúan siendo válidos.
     
-    .row.mb-4
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+    .row.mb-5
+      .col-lg-6(data-aos='fade-right')
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Volumen y repetitividad
         p Las cantidades reducidas favorecen métodos flexibles con tiempos breves de preparación. En producciones extensas y repetitivas, la automatización o el troquelado pueden distribuir sus tiempos de configuración sobre un mayor número de unidades.
         p.mb-0 El volumen no constituye el único criterio. Una orden grande elaborada con material delicado puede continuar requiriendo velocidades moderadas o tendidos bajos. De forma inversa, una orden pequeña puede justificar un sistema automatizado cuando ya se dispone del archivo y la producción debe cumplir tolerancias estrictas.
-      .col-lg-6
+      .col-lg-6.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t3/49.png', alt='')
     
-    .row.mb-4
-      .col-lg-6
+    .row.mb-5
+      .col-lg-6.d-none.d-lg-block(fade-right)
         img(src='@/assets/curso/temas/t3/50.png', alt='')
-      .col-lg-6
-        .subt.mb-4(data-aos='fade-right')
+      .col-lg-6(data-aos="fade-left")
+        .subt.mb-4
           img(src='@/assets/curso/temas/t1/subt.svg', alt='')
           h3.mb-0.mx-3 Precisión requerida
         p Los contornos funcionales, las piezas pequeñas y las referencias de ensamble pueden exigir mayor exactitud que los cortes preliminares de separación. La selección debe considerar la tolerancia permitida y el efecto que una desviación tendría sobre las operaciones posteriores.
@@ -827,194 +825,184 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Matriz orientativa para seleccionar la tecnología de corte
     
-    TabsC.color-primario
+    TabsC.color-primario.mb-5(data-aos="fade")
       .py-3.py-md-4(titulo="Cantidad y repetitividad")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/51.png', alt='')
-          .col-md-7
-            h4.mb-0 Muestra o pieza única
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: tijera industrial o sistema automatizado de capa única.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: permite procesar cantidades reducidas sin preparar tendidos elevados.
-            h4.mb-0 Componentes pequeños de alta repetición
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: troquel y prensa compatible.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: proporciona repetibilidad cuando la geometría permanece estable.
-            h4.mb-0 Producción digital repetitiva
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: sistema automatizado con control numérico.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: reproduce trayectorias programadas y conserva integración con el trazo.
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/51.png', alt='')
+          .col-lg-6.col-11
+            h5.mb-2 Muestra o pieza única
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: tijera industrial o sistema automatizado de capa única.              
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: permite procesar cantidades reducidas sin preparar tendidos elevados.
+            h5.mb-2 Componentes pequeños de alta repetición
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: troquel y prensa compatible.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: proporciona repetibilidad cuando la geometría permanece estable.
+            h5.mb-2 Producción digital repetitiva
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: sistema automatizado con control numérico.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: reproduce trayectorias programadas y conserva integración con el trazo.
       .py-3.py-md-4(titulo="Altura y geometría")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/52.png', alt='')
-          .col-md-7
-            h4.mb-0 Tendido bajo con contornos amplios
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: cuchilla circular o recta de capacidad compatible.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: facilita recorridos continuos sin exigir una altura elevada.
-            h4.mb-0 Tendido medio o alto con piezas grandes
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: cuchilla recta.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: ofrece capacidad vertical y movilidad alrededor del tendido.
-            h4.mb-0 Piezas pequeñas y curvas complejas
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: cuchilla banda sobre bloques estabilizados.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: facilita el perfilado controlado de contornos de menor dimensión.
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/52.png', alt='')
+          .col-lg-6.col-11
+            h5.mb-2 Tendido bajo con contornos amplios
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: cuchilla circular o recta de capacidad compatible.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: facilita recorridos continuos sin exigir una altura elevada.
+            h5.mb-2 Tendido medio o alto con piezas grandes
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: cuchilla recta.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: ofrece capacidad vertical y movilidad alrededor del tendido.
+            h5.mb-2 Piezas pequeñas y curvas complejas
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: cuchilla banda sobre bloques estabilizados.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: facilita el perfilado controlado de contornos de menor dimensión.
       .py-3.py-md-4(titulo="Propiedades del material")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/53.png', alt='')
-          .col-md-7
-            h4.mb-0 Material elástico
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: equipo con estabilización y parámetros ajustables.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: reduce la deformación provocada por arrastre, presión o aceleración.
-            h4.mb-0 Material sintético sensible al calor
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: corte mecánico o tecnología previamente validada.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: evita seleccionar un sistema térmico sin comprobar el comportamiento del borde.
-            h4.mb-0 Material resbaladizo
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: tendido bajo, sujeción controlada y herramienta de trayectoria estable.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: disminuye el desplazamiento entre capas durante el corte.
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/53.png', alt='')
+          .col-lg-6.col-11
+            h5.mb-2 Material elástico
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: equipo con estabilización y parámetros ajustables.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: reduce la deformación provocada por arrastre, presión o aceleración.
+            h5.mb-2 Material sintético sensible al calor
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: corte mecánico o tecnología previamente validada.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: evita seleccionar un sistema térmico sin comprobar el comportamiento del borde.
+            h5.mb-2 Material resbaladizo
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: tendido bajo, sujeción controlada y herramienta de trayectoria estable.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: disminuye el desplazamiento entre capas durante el corte.
       .py-3.py-md-4(titulo="Flexibilidad del diseño")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t3/54.png', alt='')
-          .col-md-7
-            h4.mb-0 Diseño con cambios frecuentes
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Tecnología compatible: tecnología flexible sin herramienta específica permanente.
-              li 
-                i.fas.fa-brain
-                | Justificación técnica: evita depender de troqueles que pierden vigencia con cada modificación.
-            h4.mb-0 Validación de la selección
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | La selección se valida mediante una prueba inicial ejecutada con las condiciones previstas de producción. La revisión debe incluir piezas superiores, intermedias e inferiores, debido a que las desviaciones verticales pueden no aparecer en la primera capa.
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t3/54.png', alt='')
+          .col-lg-6.col-11
+            h5.mb-2 Diseño con cambios frecuentes
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 Tecnología compatible: tecnología flexible sin herramienta específica permanente.
+              li
+                span.mb-0
+                p.mb-0 Justificación técnica: evita depender de troqueles que pierden vigencia con cada modificación.
+            h5.mb-2 Validación de la selección
+            ul.lista-ul--color.fa-lista.lista-lana
+              li.mb-0
+                span.mb-0
+                p.mb-0 La selección se valida mediante una prueba inicial ejecutada con las condiciones previstas de producción. La revisión debe incluir piezas superiores, intermedias e inferiores, debido a que las desviaciones verticales pueden no aparecer en la primera capa.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Criterios para validar una prueba de corte   
 
-    .row.bg-color-5.mb-4
-      SlyderF(columnas="col-lg-6 col-xl-4")
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+    .row.bgcompl-2.align-items-center.p-4.mb-5(data-aos="fade")
+      .col-lg-12.col-12.px-lg-4
+        .row.justify-content-center.align-items-center
+
+          SlyderF(columnas="col-md-6 col-xl-4")
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/55.svg' alt='')
-          h2.text-center 1. Correspondencia del contorno
-          p.text-center Las piezas deben conservar la geometría del patrón dentro de la tolerancia establecida.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4                  
+                  h4.text-center 1. Correspondencia del contorno
+                  p.text-center Las piezas deben conservar la geometría del patrón dentro de la tolerancia establecida.        
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/56.svg' alt='')
-          h2.text-center 2. Uniformidad entre capas
-          p.text-center Las piezas superiores, intermedias e inferiores deben mantener dimensiones equivalentes.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4 
+                  h4.text-center 2. Uniformidad entre capas
+                  p.text-center Las piezas superiores, intermedias e inferiores deben mantener dimensiones equivalentes.        
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/57.svg' alt='')
-          h2.text-center 3. Calidad del borde
-          p.text-center El material no debe presentar desgarro, fusión, contaminación o deshilachado superior al criterio autorizado.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4 
+                  h4.text-center 3. Calidad del borde
+                  p.text-center El material no debe presentar desgarro, fusión, contaminación o deshilachado superior al criterio autorizado.  
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/58.svg' alt='')
-          h2.text-center 4. Precisión de piquetes
-          p.text-center Las marcas deben coincidir con la posición y profundidad definidas.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4
+                  h4.text-center 4. Precisión de piquetes
+                  p.text-center Las marcas deben coincidir con la posición y profundidad definidas.
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/59.svg' alt='')
-          h2.text-center 5. Precisión de perforaciones
-          p.text-center Las referencias interiores deben conservar ubicación, diámetro y profundidad autorizados.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4
+                  h4.text-center 5. Precisión de perforaciones
+                  p.text-center Las referencias interiores deben conservar ubicación, diámetro y profundidad autorizados.
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/60.svg' alt='')
-          h2.text-center 6. Integridad del material
-          p.text-center Las piezas no deben presentar estiramiento, desplazamiento, compresión permanente o daño superficial.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4 
+                  h4.text-center 6. Integridad del material
+                  p.text-center Las piezas no deben presentar estiramiento, desplazamiento, compresión permanente o daño superficial. 
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/61.svg' alt='')
-          h2.text-center 7. Cantidad
-          p.text-center El resultado debe corresponder con las capas y la proporción establecidas.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4  
+                  h4.text-center 7. Cantidad
+                  p.text-center El resultado debe corresponder con las capas y la proporción establecidas.  
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/62.svg' alt='')
-          h2.text-center 8. Identificación
-          p.text-center Las piezas deben conservar la relación con talla, lote, tono, referencia y orden.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4 
+                  h4.text-center 8. Identificación
+                  p.text-center Las piezas deben conservar la relación con talla, lote, tono, referencia y orden. 
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/63.svg' alt='')
-          h2.text-center 9. Seguridad operativa
-          p.text-center La ejecución debe realizarse con guardas, controles y procedimientos funcionales.
-        
-        .tarjeta.bg-color-2.p-4
-          .row.justify-content-center.mb-3
-            .col-8
+              .tarjeta.bg-color-2
+                .p-4
+                  h4.text-center 9. Seguridad operativa
+                  p.text-center La ejecución debe realizarse con guardas, controles y procedimientos funcionales. 
+            .tarjeta-avatar
               img(src='@/assets/curso/temas/t3/64.svg' alt='')
-          h2.text-center 10. Tiempo del ciclo
-          p.text-center El registro debe incluir todas las actividades necesarias para obtener y liberar el corte.
+              .tarjeta.bg-color-2
+                .p-4 
+                  h4.text-center 10. Tiempo del ciclo
+                  p.text-center El registro debe incluir todas las actividades necesarias para obtener y liberar el corte.           
       
-    .cajon.color-acento-contenido.bg-color-4.p-4.mb-5(data-aos="fade")
+    .cajon.color-acento-contenido.bg-color-4.p-4(data-aos="fade")
       h4.mb-2 Decisión de capacidad
       p.mb-0 La máquina seleccionada debe procesar el volumen requerido dentro del tiempo disponible y mantener simultáneamente la precisión, la calidad del borde, la uniformidad entre capas y las condiciones de operación segura. Si alguno de estos requisitos se incumple, la capacidad declarada no representa una capacidad técnicamente aprovechable.
     
