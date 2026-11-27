@@ -15,11 +15,12 @@
         p.mb-0 Las condiciones de operación reúnen los requisitos físicos, técnicos, documentales y preventivos necesarios para ejecutar el corte de forma controlada. Comprenden la preparación del área, el estado de las máquinas, la disponibilidad de herramientas, la identificación de los materiales, el cumplimiento de los procedimientos y la verificación de los riesgos asociados con cada tecnología.
     
     p La conformidad de las piezas no depende exclusivamente de la trayectoria de la cuchilla. Una mesa desnivelada, una iluminación insuficiente, una superficie contaminada, un equipo sin mantenimiento o un tendido identificado incorrectamente pueden afectar el resultado, aunque el corte se realice sobre la línea prevista. Por esta razón, el área debe liberarse antes de comenzar y conservarse bajo control durante toda la operación.
-    p Las condiciones también deben permitir responder ante fallas, piezas no conformes, interrupciones y situaciones de emergencia. ISO 9001:2026 establece un marco para controlar los procesos, los recursos, la información documentada y las salidas no conformes, mientras que ISO 45001:2018 orienta la identificación de peligros y la gestión de los riesgos laborales. Ambos enfoques convergen en la necesidad de planear, ejecutar, verificar y mejorar las operaciones (International Organization for Standardization [ISO], 2018, 2026). 
+    p.mb-4 Las condiciones también deben permitir responder ante fallas, piezas no conformes, interrupciones y situaciones de emergencia. ISO 9001:2026 establece un marco para controlar los procesos, los recursos, la información documentada y las salidas no conformes, mientras que ISO 45001:2018 orienta la identificación de peligros y la gestión de los riesgos laborales. Ambos enfoques convergen en la necesidad de planear, ejecutar, verificar y mejorar las operaciones (International Organization for Standardization [ISO], 2018, 2026). 
 
-    .cajon.color-acento-contenido.bg-color-4.p-4.mb-5(data-aos="fade")
+    .cajon.color-acento-contenido.bg-color-4.p-4
       h4.mb-2 Condición de inicio
       p.mb-0 Ninguna orden debe ingresar a corte mientras existan inconsistencias entre el material, el trazo, el tendido, la documentación o la configuración del equipo. La liberación previa evita que una desviación se reproduzca en todas las capas.
+
 
     Separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -44,64 +45,54 @@
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t4/3.png', alt='')
     
-    p Las vías de circulación y las salidas deben permanecer despejadas. Los cables, extensiones y equipos auxiliares no deben atravesar recorridos sin protección, porque pueden generar tropiezos, desconexiones o daños. Las condiciones locativas forman parte del control operativo y no deben revisarse únicamente después de un incidente.
+    p.mb-5 Las vías de circulación y las salidas deben permanecer despejadas. Los cables, extensiones y equipos auxiliares no deben atravesar recorridos sin protección, porque pueden generar tropiezos, desconexiones o daños. Las condiciones locativas forman parte del control operativo y no deben revisarse únicamente después de un incidente.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Condiciones para liberar el área de corte
 
-    ImagenInfografica.color-primario
+    ImagenInfografica.color-acento-contenido.mb-5(data-aos="fade")
       template(v-slot:imagen)
         figure
           img(src='@/assets/curso/temas/t4/4.jpg', alt='')
-
-      .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="1")
-        .h5.mb-2 Orden y limpieza
+      .tarjeta.bg-color-12.p-3.text-white(x="9.5%" y="59.5%" numero="1")
+        h5.mb-2 1. Orden y limpieza
         p #[b Condición requerida:] la superficie debe permanecer libre de residuos, líquidos, objetos y materiales ajenos a la orden.
         p.mb-0 #[b Consecuencia de una condición deficiente:] puede generar contaminación, obstrucciones o pérdida de identificación.
-
-      .tarjeta.color-acento-botones.p-3(x="50%" y="50%" numero="2")
-        .h5.mb-2 Estado de la mesa
+      .tarjeta.bg-color-12.p-3.text-white(x="44.5%" y="62%" numero="2")
+        h5.mb-2 2. Estado de la mesa
         p #[b Condición requerida:] la estructura debe conservar estabilidad, nivelación y continuidad superficial.
         p.mb-0 #[b Consecuencia de una condición deficiente:] puede afectar el desplazamiento del equipo y la estabilidad del tendido.
-
-      .tarjeta.color-acento-botones.p-3(x="70%" y="70%" numero="3")
-        .h5.mb-2 iluminación
+      .tarjeta.bg-color-12.p-3.text-white(x="45%" y="13%" numero="3")
+        h5.mb-2 3. Iluminación
         p #[b Condición requerida:] debe permitir observar contornos, marcas, defectos y referencias sin interferencias.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] incrementa el riesgo de desviación, omisión o interpretación incorrecta.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="4")
-        .h5.mb-2 Circulación
+        p.mb-0 #[b Consecuencia de una condición deficiente:] incrementa el riesgo de desviación, omisión o interpretación incorrecta.      
+      .tarjeta.bg-color-12.p-3.text-white(x="60%" y="76%" numero="4")
+        h5.mb-2 4. Circulación
         p #[b Condición requerida:] los pasillos y accesos deben permanecer despejados.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] dificulta la evacuación y aumenta la posibilidad de golpes o tropiezos.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="5")
-        .h5.mb-2 Instalación eléctrica
+        p.mb-0 #[b Consecuencia de una condición deficiente:] dificulta la evacuación y aumenta la posibilidad de golpes o tropiezos.      
+      .tarjeta.bg-color-12.p-3.text-white(x="31%" y="34%" numero="5")
+        h5.mb-2 5. Instalación eléctrica
         p #[b Condición requerida:] las conexiones deben corresponder con la carga, el equipo y las condiciones del área.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] puede producir interrupciones, recalentamiento, descarga o daño del equipo.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="6")
-        .h5.mb-2 Ventilación o extracción
+        p.mb-0 #[b Consecuencia de una condición deficiente:] puede producir interrupciones, recalentamiento, descarga o daño del equipo.      
+      .tarjeta.bg-color-12.p-3.text-white(x="16%" y="13.5%" numero="6")
+        h5.mb-2 6. Ventilación o extracción
         p #[b Condición requerida:] debe responder a los residuos o emisiones generados por la tecnología utilizada.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] favorece la acumulación de partículas, vapores o calor.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="7")
-        .h5.mb-2 Delimitación
+        p.mb-0 #[b Consecuencia de una condición deficiente:] favorece la acumulación de partículas, vapores o calor.      
+      .tarjeta.bg-color-12.p-3.text-white(x="55%" y="38%" numero="7")
+        h5.mb-2 7. Delimitación
         p #[b Condición requerida:] las órdenes liberadas, retenidas y terminadas deben ocupar zonas diferenciadas.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] facilita mezclas entre referencias, lotes, tallas o estados de calidad.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="8")
-        .h5.mb-2 Gestión de residuos
+        p.mb-0 #[b Consecuencia de una condición deficiente:] facilita mezclas entre referencias, lotes, tallas o estados de calidad.      
+      .tarjeta.bg-color-12.p-3.text-white(x="83.5%" y="90%" numero="8")
+        h5.mb-2 8. Gestión de residuos
         p #[b Condición requerida:] los recipientes deben estar identificados y ubicados sin interferir con la operación.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] genera acumulación, contaminación o clasificación incorrecta de sobrantes.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="9")
-        .h5.mb-2 Señalización
+        p.mb-0 #[b Consecuencia de una condición deficiente:] genera acumulación, contaminación o clasificación incorrecta de sobrantes.      
+      .tarjeta.bg-color-12.p-3.text-white(x="83.5%" y="25%" numero="9")
+        h5.mb-2 9. Señalización
         p #[b Condición requerida:] los peligros, restricciones y rutas deben encontrarse identificados.
-        p.mb-0 #[b Consecuencia de una condición deficiente:] reduce la capacidad para reconocer condiciones y actuar oportunamente.
-      
-      .tarjeta.color-acento-botones.p-3(x="60%" y="60%" numero="10")
-        .h5.mb-2 Medios de emergencia
+        p.mb-0 #[b Consecuencia de una condición deficiente:] reduce la capacidad para reconocer condiciones y actuar oportunamente.      
+      .tarjeta.bg-color-12.p-3.text-white(x="88.5%" y="52%" numero="10")
+        h5.mb-2 10. Medios de emergencia
         p #[b Condición requerida:] los dispositivos previstos deben permanecer accesibles y en condición operativa.
         p.mb-0 #[b Consecuencia de una condición deficiente:] retrasa la respuesta ante una situación no controlada.
     
@@ -109,7 +100,7 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Liberación de la orden anterior
     
-    .row.justify-content-center.align-items-center.mb-5
+    .row.justify-content-center.align-items-center.mb-4
       .col-lg-5.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t4/5.png', alt='')
       .col-lg-7(data-aos="fade-left")
@@ -120,27 +111,23 @@
       h4.mb-2 Cambio de referencia
       p.mb-0 Cambiar de referencia no consiste únicamente en reemplazar el tendido. También exige retirar la información anterior, verificar herramientas, ajustar parámetros, limpiar superficies y confirmar que la nueva documentación corresponde con el producto programado. 
     
-    .row.justify-content-center.mb-5
-      .col-lg-9.position-relative
+    .row.mb-5(data-aos="fade")
+      .col-lg-10.position-relative
         .avatar
-          figure
-            img(src='@/assets/curso/temas/t4/6.svg', alt='').img250
-          
+          img(src='@/assets/curso/temas/t4/6.svg', alt='')          
         .crd.crd--avatarHorizontal.crd--first.py-4
           .row.align-items-center
             .col-auto
-              figure
-                img(src='@/assets/curso/temas/t4/7.svg', alt='').img100
+              img(src='@/assets/curso/temas/t4/7.svg', alt='')
             .col
               h5 Fase operatAlistamiento de los equiposiva
               p El alistamiento de la máquina comienza con una inspección visual y funcional. Deben revisarse la cuchilla, la guarda, la base, los mandos, las conexiones, el sistema de afilado y los elementos de sujeción. En equipos automáticos se agregan la mesa, el sistema de vacío, el cabezal, los sensores, el archivo digital y los parámetros del programa.
               p El estado de la cuchilla tiene efecto directo sobre el borde y la precisión. Una hoja deteriorada incrementa la resistencia, puede desviarse y obliga a ejercer mayor presión durante la conducción. El reemplazo o afilado debe efectuarse de acuerdo con la condición observada y con las indicaciones del fabricante, sin esperar a que el defecto se reproduzca en una cantidad significativa de piezas.
               p Los mandos de inicio, parada y emergencia deben permanecer identificados y accesibles. Las guardas se ajustan a la altura de trabajo sin retirarlas ni anularlas. ISO 12100 establece que la reducción del riesgo debe considerar el diseño seguro, las medidas de protección y la información para el uso; los equipos no pueden depender exclusivamente de la atención de quien los opera (ISO, 2010).
-        .crd.crd--avatarHorizontal.crd--first.py-4
+        .crd.crd--avatarHorizontal.crd--last.py-4
           .row.align-items-center
             .col-auto
-              figure
-                img(src='@/assets/curso/temas/t4/8.svg', alt='').img100
+              img(src='@/assets/curso/temas/t4/8.svg', alt='')
             .col
               h5 Prueba inicial
               p La configuración debe verificarse mediante una prueba antes de procesar la totalidad del tendido. Esta comprobación permite revisar la estabilidad del material, la limpieza del borde, la maniobrabilidad de la herramienta y la correspondencia con el contorno.
@@ -150,84 +137,79 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Lista técnica para el alistamiento de equipos
 
-    TabsC.color-primario
+    TabsC.color-primario.mb-5(data-aos='fade')
       .py-3.py-md-4(titulo="Estado físico del equipo")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t4/9.png', alt='')
-          .col-md-7
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Identificación del equipo
-                p Debe coincidir con el recurso asignado a la orden y con su registro de mantenimiento.
-              li 
-                i.fas.fa-brain
-                | Cuchilla o elemento cortante
-                p Debe presentar montaje correcto, filo suficiente y compatibilidad con el material.
-              li 
-                i.fas.fa-brain
-                | Guarda
-                p Debe permanecer instalada, regulada y funcional.
-              li 
-                i.fas.fa-brain
-                | Base y superficie de desplazamiento
-                p Deben encontrarse limpias, estables y sin deformaciones.
-
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/9.png', alt='')
+          .col-lg-6.col-11
+            ul.lista-ul--color.fa-lista.lista-lana
+              li
+                span.mb-0
+                  b #[b Identificación del equipo]
+                  p.mb-0 Debe coincidir con el recurso asignado a la orden y con su registro de mantenimiento.
+              li
+                span.mb-0
+                  b #[b Cuchilla o elemento cortante]
+                  p.mb-0 Debe presentar montaje correcto, filo suficiente y compatibilidad con el material.
+              li
+                span.mb-0
+                  b #[b Guarda]
+                  p.mb-0 Debe permanecer instalada, regulada y funcional.
+              li
+                span.mb-0
+                  b #[b Base y superficie de desplazamiento]
+                  p.mb-0 Deben encontrarse limpias, estables y sin deformaciones.
       .py-3.py-md-4(titulo="Funcionamiento y seguridad")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t4/10.png', alt='')
-          .col-md-7
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Mandos
-                p Deben responder correctamente al inicio, parada y detención de emergencia.
-              li 
-                i.fas.fa-brain
-                | Alimentación eléctrica
-                p Debe presentar conexiones íntegras y compatibles con el equipo.
-              li 
-                i.fas.fa-brain
-                | Sistema de afilado
-                p Debe funcionar sin generar interferencias ni residuos sobre el material.
-              li 
-                i.fas.fa-brain
-                | Dispositivos de sujeción
-                p Deben conservar el tendido sin marcarlo ni deformarlo.
-      
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/10.png', alt='')
+          .col-lg-6.col-11
+            ul.lista-ul--color.fa-lista.lista-lana
+              li
+                span.mb-0
+                  b #[b Mandos]
+                  p.mb-0 Deben responder correctamente al inicio, parada y detención de emergencia.
+              li
+                span.mb-0
+                  b #[b Alimentación eléctrica]
+                  p.mb-0 Debe presentar conexiones íntegras y compatibles con el equipo.
+              li
+                span.mb-0
+                  b #[b Sistema de afilado]
+                  p.mb-0 Debe funcionar sin generar interferencias ni residuos sobre el material.
+              li
+                span.mb-0
+                  b #[b Dispositivos de sujeción]
+                  p.mb-0 Deben conservar el tendido sin marcarlo ni deformarlo.    
       .py-3.py-md-4(titulo="Configuración y prueba")
-        .row
-          .col-md-5.mb-4.mb-md-0
-            figure
-              img(src='@/assets/curso/temas/t4/11.png', alt='')
-          .col-md-7
-            ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | Sensores y controles
-                p Deben responder a las funciones configuradas en los equipos que los incorporan.
-              li 
-                i.fas.fa-brain
-                | Parámetros
-                p Deben coincidir con el material, la altura y la geometría de la orden.
-              li 
-                i.fas.fa-brain
-                | Archivo digital
-                p Debe corresponder con la versión aprobada del trazo y con las unidades utilizadas.
-              li 
-                i.fas.fa-brain
-                | Prueba inicial
-                p Debe demostrar precisión, limpieza del borde y estabilidad antes de liberar el proceso.
+        .row.align-items-center.justify-content-center
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/11.png', alt='')
+          .col-lg-6.col-11
+            ul.lista-ul--color.fa-lista.lista-lana
+              li
+                span.mb-0
+                  b #[b Sensores y controles]
+                  p.mb-0 Deben responder a las funciones configuradas en los equipos que los incorporan.
+              li
+                span.mb-0
+                  b #[b Parámetros]
+                  p.mb-0 Deben coincidir con el material, la altura y la geometría de la orden.
+              li
+                span.mb-0
+                  b #[b Archivo digital]
+                  p.mb-0 Debe corresponder con la versión aprobada del trazo y con las unidades utilizadas.
+              li
+                span.mb-0
+                  b #[b Prueba inicial]
+                  p.mb-0 Debe demostrar precisión, limpieza del borde y estabilidad antes de liberar el proceso.
     
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Registro del alistamiento
     
-    .row.justify-content-center.mb-4(data-aos="fade")
+    .row.justify-content-center(data-aos="fade")
       .col-lg-5.pe-lg-0.d-none.d-lg-block
         img(src='@/assets/curso/temas/t4/12.png', alt='')
       .col-lg-7.ps-lg-0
@@ -236,36 +218,39 @@
           p La revisión debe dejar evidencia cuando el procedimiento de la organización así lo establezca. El registro puede incluir fecha, turno, orden, equipo, cuchilla, parámetros, resultado de la prueba y novedades encontradas. Su finalidad no consiste en acumular formatos, sino en demostrar que las condiciones críticas fueron verificadas.
           p.mb-0 Cuando se detecta una anomalía, el equipo debe identificarse para impedir su utilización hasta que se evalúe y se autorice nuevamente. Una observación verbal no garantiza que otra persona reconozca la restricción; la condición requiere señalización y trazabilidad.
     
+
     Separador
     #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.2 Buenas prácticas de manufactura
     
-    .row.mb-4.bg-color-4
-      .col-lg-7
-        p En la confección, las buenas prácticas de manufactura pueden entenderse como el conjunto de procedimientos destinados a conservar el orden, la limpieza, la identificación, la trazabilidad, la uniformidad operativa y el control de los productos durante su transformación. No corresponden a la regulación sanitaria específica de sectores como el farmacéutico o el alimentario; se aplican como principios de organización y control adaptados al proceso productivo de prendas.
-        p Estas prácticas permiten disminuir la variabilidad introducida por documentos incorrectos, materiales mezclados, herramientas deterioradas, residuos acumulados o decisiones no registradas. Su aplicación debe guardar proporción con el riesgo y la complejidad de cada operación.
-      .col-lg-5
-        img(src='@/assets/curso/temas/t4/14.svg', alt='')
+    .bg-color-4.mb-4(data-aos='fade')
+      .row
+        .col-lg-7
+          .p-4.p-xl-5
+            p En la confección, las buenas prácticas de manufactura pueden entenderse como el conjunto de procedimientos destinados a conservar el orden, la limpieza, la identificación, la trazabilidad, la uniformidad operativa y el control de los productos durante su transformación. No corresponden a la regulación sanitaria específica de sectores como el farmacéutico o el alimentario; se aplican como principios de organización y control adaptados al proceso productivo de prendas.
+            p Estas prácticas permiten disminuir la variabilidad introducida por documentos incorrectos, materiales mezclados, herramientas deterioradas, residuos acumulados o decisiones no registradas. Su aplicación debe guardar proporción con el riesgo y la complejidad de cada operación.
+        .col-lg-5.d-none.d-lg-block
+          img(src='@/assets/curso/temas/t4/14.svg', alt='')
     
     .row.mb-4
-      .col-lg-3
+      .col-lg-3.d-none.d-lg-block
         img(src='@/assets/curso/temas/t4/15.png', alt='')
       .col-lg-9
         TabsA.color-acento-botones
-          .tarjeta.color-acento-botones--borde.p-4(titulo="Control documental")
+          .tarjeta.bg-color-10.p-4(titulo="Control documental")
             p La información utilizada debe corresponder con la versión vigente. La orden de corte, el trazo, la ficha técnica, el mapa de defectos y las instrucciones de identificación deben presentar datos coherentes. Cuando se sustituye un documento, la versión anterior debe retirarse de los puntos de uso para impedir su aplicación involuntaria.
             p Las modificaciones requieren autorización y trazabilidad. Cambiar la cantidad de capas, la ubicación de un empalme, la profundidad de un piquete o la versión del archivo sin registrar la decisión impide reconstruir las condiciones bajo las cuales se obtuvo el producto.
             p ISO 9001:2026 orienta el control de los procesos y de la información documentada para asegurar que las operaciones se ejecuten de manera consistente y que las salidas cumplan los requisitos establecidos (ISO, 2026). 
-          .tarjeta.color-acento-botones--borde.p-4(titulo="Identificación y trazabilidad")
+          .tarjeta.bg-color-10.p-4(titulo="Identificación y trazabilidad")
             p Las piezas deben conservar la relación con la orden, la referencia, la talla, el color, el lote y el tono. Esta identificación puede mantenerse mediante tiquetes, etiquetas, códigos, numeración o registros digitales, siempre que el método no dañe el material ni se pierda durante la transferencia.
             p La trazabilidad no se limita a conocer de qué rollo procede el tejido. También debe permitir establecer en qué tendido se cortó, cuál trazo se utilizó, qué cantidad de capas se procesó y qué novedades se presentaron. Cuando aparece una diferencia de tono o una desviación dimensional, esta información facilita delimitar el material afectado.
-          .tarjeta.color-acento-botones--borde.p-4(titulo="Limpieza y control de contaminación")
+          .tarjeta.bg-color-10.p-4(titulo="Limpieza y control de contaminación")
             p La limpieza debe efectuarse con métodos compatibles con los materiales y los equipos. Los residuos textiles, el polvo, los lubricantes y las partículas metálicas pueden adherirse a las piezas o interferir con los mecanismos. No resulta adecuado utilizar aire comprimido sin evaluar si dispersa contaminantes hacia otras superficies o personas.
             p Los aceites y productos de mantenimiento deben permanecer identificados y separados del material. Después de intervenir una máquina se verifica que no existan excedentes, herramientas o paños sobre la mesa. El equipo solo puede retornar a operación cuando su condición haya sido comprobada.
-          .tarjeta.color-acento-botones--borde.p-4(titulo="Segregación de estados")
+          .tarjeta.bg-color-10.p-4(titulo="Segregación de estados")
             p Las piezas conformes, retenidas, no conformes y pendientes de verificación deben permanecer separadas. La segregación puede ser física, visual o digital, pero debe impedir que una salida no liberada continúe hacia numeración, paqueteo o ensamble.
             p Los sobrantes aprovechables tampoco deben mezclarse con el desperdicio. Su clasificación permite determinar si pueden utilizarse para reposiciones, pruebas o aplicaciones autorizadas. Cuando un remanente conserva valor productivo, debe identificarse con la información necesaria para su recuperación.
-          .tarjeta.color-acento-botones--borde.p-4(titulo="Herramientas y objetos personales")
+          .tarjeta.bg-color-10.p-4(titulo="Herramientas y objetos personales")
             p Las herramientas deben ocupar posiciones definidas y revisarse al finalizar la orden. La pérdida de una cuchilla, aguja, tornillo u otro elemento metálico exige detener la liberación hasta verificar que no se encuentre entre las capas o las piezas.
             p Los objetos personales no deben permanecer sobre las mesas ni mezclarse con el producto. Esta restricción evita contaminación, daño del material y pérdida de elementos dentro de los paquetes.
     
@@ -282,47 +267,47 @@
               th Resultado esperado
           tbody
             tr
-              th Utilización de documentos vigentes
+              td Utilización de documentos vigentes
               td Verificar código, versión y autorización antes de iniciar la orden.
               td Evita ejecutar el corte con información reemplazada o contradictoria.
             tr
-              th Identificación del material
+              td Identificación del material
               td Mantener lote, tono, rollo y referencia durante todo el recorrido.
               td Permite rastrear el origen de las piezas y delimitar posibles desviaciones.
             tr
-              th Separación de órdenes
+              td Separación de órdenes
               td Evitar que materiales y piezas de referencias diferentes compartan una zona sin control.
               td Reduce mezclas de tallas, colores, lotes o estados.
             tr
-              th Limpieza programada
+              td Limpieza programada
               td Retirar residuos y revisar superficies antes, durante y después de la operación.
               td Disminuye contaminación e interferencias con equipos o materiales.
             tr
-              th Control de herramientas
+              td Control de herramientas
               td Registrar, ubicar y verificar los elementos utilizados.
               td Reduce pérdidas y presencia de objetos extraños entre las piezas.
             tr
-              th Mantenimiento planificado
+              td Mantenimiento planificado
               td Ejecutar inspecciones y actividades según las condiciones del equipo.
               td Favorece estabilidad, disponibilidad y calidad de corte.
             tr
-              th Prueba de configuración
+              td Prueba de configuración
               td Validar material, herramienta y parámetros antes del corte completo.
               td Evita reproducir una condición incorrecta en todo el tendido.
             tr
-              th Segregación de producto
+              td Segregación de producto
               td Separar piezas conformes, retenidas, no conformes y pendientes.
               td Impide la liberación involuntaria de componentes sin verificar.
             tr
-              th Gestión de sobrantes
+              td Gestión de sobrantes
               td Clasificar material aprovechable, reposiciones y desperdicio.
               td Conserva el valor de los remanentes y mejora el balance de materiales.
             tr
-              th Registro de novedades
+              td Registro de novedades
               td Documentar fallas, interrupciones, defectos y decisiones autorizadas.
               td Permite analizar las condiciones reales de ejecución.
             tr
-              th Cierre de la orden
+              td Cierre de la orden
               td Conciliar cantidades, retirar documentos y liberar el área.
               td Evita pendientes ocultos y mezclas durante el cambio de referencia.
     
@@ -330,27 +315,22 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Prácticas antes, durante y después del corte
     
-    .tarjeta.tarjeta--gris.p-4
-      LineaTiempoC.color-acento-contenido(text-small)
+    .tarjeta.bg-fondo-1.p-4.mb-4(data-aos="fade")
+      LineaTiempoC.color-acento-botones
         .row.justify-content-center.align-items-center(titulo="Paso 1")
-          .col-md-6
-            figure
-              img(src='@/assets/curso/temas/t4/16.png', alt='')
-          .col-md-6.mb-4.mb-md-0
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/16.png', alt='')
+          .col-lg-6.col-11
             p #[b Antes del corte,] corresponde verificar la documentación, liberar el área, revisar el equipo, confirmar el material y aprobar la prueba inicial. Ninguna discrepancia debe resolverse mediante suposiciones; cuando la información no coincide, se detiene el proceso hasta obtener una definición autorizada.    
-
         .row.justify-content-center.align-items-center(titulo="Paso 2")
-          .col-md-6
-            figure
-              img(src='@/assets/curso/temas/t4/17.png', alt='')
-          .col-md-6.mb-4.mb-md-0
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/17.png', alt='')
+          .col-lg-6.col-11
             p #[b Durante el corte,] se conserva la identificación, se controla la estabilidad del tendido y se revisa periódicamente la calidad del borde. Las capas superiores no constituyen la única referencia. Deben extraerse muestras intermedias e inferiores cuando el procedimiento o el nivel de riesgo lo requieran.
-
         .row.justify-content-center.align-items-center(titulo="Paso 3")
-          .col-md-6
-            figure
-              img(src='@/assets/curso/temas/t4/18.png', alt='')
-          .col-md-6.mb-4.mb-md-0
+          .col-lg-5.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t4/18.png', alt='')
+          .col-lg-6.col-11
             p #[b Después del corte,] se concilian las cantidades, se separan los estados de calidad, se registran las reposiciones y se retiran los residuos. La mesa y los equipos quedan preparados para la siguiente orden, sin documentos ni piezas pendientes.
 
     .cajon.color-acento-contenido.bg-color-4.p-4.mb-5(data-aos="fade")
@@ -361,25 +341,26 @@
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Manejo del producto no conforme
     
-    .row.mb-4
-      .col-lg-4
+    .row
+      .col-lg-4.d-none.d-lg-block(data-aos="fade-right")
         img(src='@/assets/curso/temas/t4/19.png', alt='')
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         p Una pieza se considera no conforme cuando incumple un requisito dimensional, geométrico, superficial, cuantitativo o de identificación. Su tratamiento comienza con la contención: debe separarse para evitar que avance mientras se determina su disposición.
         p La decisión puede incluir reposición, reclasificación autorizada, reproceso cuando resulte técnicamente viable o rechazo. No todas las piezas pueden corregirse; agregar material, profundizar piquetes o recortar un contorno ya reducido suele ser imposible. La disposición debe sustentarse en el efecto que la desviación produce sobre el producto final.
         p.mb-0 La reposición debe mantener material, lote, tono, orientación y versión del patrón. Cuando no se dispone del mismo rollo, se requiere evaluar la compatibilidad antes de cortar una pieza sustituta.
     
+
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.3 Calidad y seguridad en el corte
     
-    p La calidad y la seguridad deben controlarse de manera simultánea. Aumentar la velocidad sin conservar las guardas o reducir la inspección para cumplir una cantidad no representa una mejora productiva. Del mismo modo, una operación segura que genera piezas fuera de tolerancia requiere ajustes antes de continuar.
+    p.mb-5 La calidad y la seguridad deben controlarse de manera simultánea. Aumentar la velocidad sin conservar las guardas o reducir la inspección para cumplir una cantidad no representa una mejora productiva. Del mismo modo, una operación segura que genera piezas fuera de tolerancia requiere ajustes antes de continuar.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
       h3.mb-0.mx-3 Control de calidad
     
-    p El control debe efectuarse en tres momentos: recepción del tendido, ejecución del corte y liberación de las piezas. Cada etapa responde a riesgos distintos. Antes del corte se revisan materiales y documentación; durante la operación se controla la trayectoria y el comportamiento del equipo; después se verifican dimensiones, bordes, marcas, cantidades e identificación.
+    p.mb-5 El control debe efectuarse en tres momentos: recepción del tendido, ejecución del corte y liberación de las piezas. Cada etapa responde a riesgos distintos. Antes del corte se revisan materiales y documentación; durante la operación se controla la trayectoria y el comportamiento del equipo; después se verifican dimensiones, bordes, marcas, cantidades e identificación.
 
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')
@@ -395,24 +376,24 @@
             h3 Antes del corte
             h4 Correspondencia documental
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] la orden, el trazo, el material y el tendido deben pertenecer a la misma referencia y versión.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] la orden, el trazo, el material y el tendido deben pertenecer a la misma referencia y versión.
             h4 Número de capas
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] la cantidad debe coincidir con el programa y con el rendimiento previsto.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] la cantidad debe coincidir con el programa y con el rendimiento previsto.
             h4 Orientación del tendido
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] las caras y direcciones deben corresponder con las restricciones del material.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] las caras y direcciones deben corresponder con las restricciones del material.
             h4 Condición del equipo
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] la cuchilla, la guarda, los mandos y los dispositivos deben estar disponibles y funcionales.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] la cuchilla, la guarda, los mandos y los dispositivos deben estar disponibles y funcionales.
 
         .row(titulo="")
           .col-md-5
@@ -422,24 +403,24 @@
             h3 Durante el corte
             h4 Seguimiento del contorno
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] la trayectoria debe mantenerse sobre la línea y dentro de la tolerancia establecida.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] la trayectoria debe mantenerse sobre la línea y dentro de la tolerancia establecida.
             h4 Perpendicularidad
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] la herramienta debe conservar uniformidad entre las capas superiores e inferiores.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] la herramienta debe conservar uniformidad entre las capas superiores e inferiores.
             h4 Calidad del borde
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] no deben presentarse desgarros, fusión, contaminación o deformación no autorizada. Piquetes y perforaciones
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] no deben presentarse desgarros, fusión, contaminación o deformación no autorizada. Piquetes y perforaciones
             h4 Piquetes y perforaciones
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] las marcas deben conservar posición, forma y profundidad definidas.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] las marcas deben conservar posición, forma y profundidad definidas.
 
         .row(titulo="")
           .col-md-5
@@ -449,25 +430,25 @@
             h3 Después del corte
             h4 Dimensiones
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] las piezas deben coincidir con el patrón y con las tolerancias aplicables.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] las piezas deben coincidir con el patrón y con las tolerancias aplicables.
             h4 Uniformidad entre capas
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] las muestras superiores, intermedias e inferiores deben mantener correspondencia.
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] las muestras superiores, intermedias e inferiores deben mantener correspondencia.
             h4 Cantidad
             ul.lista-ul--color
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] el número de piezas debe coincidir con las capas y con la composición del trazo. Identificación
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] cada grupo debe conservar talla, lote, tono, referencia y orden. 
-              li 
-                i.fas.fa-brain
-                | #[b Criterio de verificación:] las piezas complementarias deben encontrarse completas y correctamente agrupadas.                      
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] el número de piezas debe coincidir con las capas y con la composición del trazo. Identificación
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] cada grupo debe conservar talla, lote, tono, referencia y orden. 
+              li
+    span.mb-0
+      b #[b Criterio de verificación:] las piezas complementarias deben encontrarse completas y correctamente agrupadas.                      
           
     .subt.mb-4(data-aos='fade-right')
       img(src='@/assets/curso/temas/t1/subt.svg', alt='')

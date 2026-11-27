@@ -119,7 +119,9 @@ figcaption
   margin-inline: -3.3rem
 .bg-fondo
   &-1
-    //background-image: url(../assets/curso/bg/3.svg)
+    background-image: url(../assets/curso/temas/bg/1.png)
+    background-repeat: no-repeat
+    background-size: cover
   &-2
     background-image: url(../assets/curso/temas/t4/bg.png)
     background-repeat: no-repeat
@@ -143,6 +145,12 @@ figcaption
     background-color: #E6C09F 
   &-9
     background-color: #FCF1C7
+  &-10
+    background-color: #FFF2C7
+  &-11
+    background-color: #FFF7EA
+  &-12
+    background-color: #0D2330
 
 
 .w-80x
@@ -228,6 +236,18 @@ figcaption
   &__denominator
     padding: 0.4em 0.5em 0
     border-top: 1px solid $color-sistema-texto
+.lista-lana
+  li
+    &::before
+      content: ""
+      flex: 0 0 1.1em
+      width: 1.1em
+      height: 1.1em
+      margin-right: 7px
+      margin-top: .15em
+      background: url('../assets/curso/temas/t4/needlework.svg') no-repeat center / contain
+    > i
+      display: none
 
 
 .acordion
@@ -254,8 +274,9 @@ figcaption
 .avatar
   position: absolute
   bottom: 0
-  right: -4rem
+  right: -9rem
   z-index: 1
+  max-width: 28%
   @media (max-width: 1000px)
     display: none
 .crd--avatarHorizontal
@@ -263,31 +284,43 @@ figcaption
   padding-right: 12rem
   & > *
     position: relative
-  h5
-    color: #000000 
-  p
-    margin-bottom: 0
   &::before
     position: absolute
     content: ''
     top: 0
     right: 0
-    width: calc( 100% - 60px)
+    width: calc(100% - 60px)
     height: 100%
-    background-color: #FBE8D7
   @media (max-width: 1000px)
     padding-right: 2rem
-
-.crd--first, .crd--last
-  &::before
-    background-color: #BBDFEE!important
 .crd--first
   &::before
+    background-color: #BBDFEE
     border-top-left-radius: 30px
 .crd--last
   &::before
+    background-color: #FBE8D7
     border-bottom-left-radius: 30px
-
+.tabs-c
+  &__tab
+    background-color: #D0D7DC
+    border-bottom: 3px solid #163B50
+    &--active
+      background-color: #FFF2C7
+      span
+        font-weight: bold
+.tabs-a
+  &__tab
+    background-color: #55AFD4
+.linea-tiempo-c__header__btn--right, .linea-tiempo-c__header__btn--left
+  background-color: $color-acento-botones
+  border-color: $color-acento-botones
+@media screen and (min-width: $bp-min-xl)
+  .tabs-a.t2
+    .col-xl-3
+      width: 40%
+    .col-xl-9
+      width: 60%
 
 
 
